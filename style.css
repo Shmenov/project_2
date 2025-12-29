@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/*
+SemiBold 600
+Bold 700
+ExtraBold 800
+*/
+
+body {
+    font-family: "Manrope", sans-serif;
+}
+
