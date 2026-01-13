@@ -45,6 +45,13 @@ a:hover {
     gap: 10px;
 }
 
+.title {
+    margin-top: 0;
+    font-size: 36px;
+    text-align: center;
+    color: #DEDEDE;
+}
+
 .container {
     max-width: 1250px;
     margin-left: auto;
@@ -80,6 +87,16 @@ a:hover {
     background-repeat: no-repeat;
 }
 
+.socials {
+    display: flex;
+    gap: 40px;
+
+}
+
+.socials__img {
+    display: flex;
+}
+
 /*------------
     HEADER
 ------------*/
@@ -105,14 +122,6 @@ a:hover {
 .header__container {
     font-weight: 700;
     font-size: 18px;
-}
-
-/*------------
-    MAIN
-------------*/
-
-.main {
-
 }
 
 /*------------
@@ -186,6 +195,8 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
+
+    padding-top: 140px;
  }
 
 .work {
@@ -193,9 +204,8 @@ a:hover {
     position: relative;
 }
 
-.work:nth-child(even) {
-    position: relative;
-    top: 140px;
+.work:nth-child(odd) {
+    margin-top: -140px;
 }
 
 .work:hover {
@@ -233,5 +243,75 @@ a:hover {
 }
 
 /*------------
-    ???
+    PROJECTS
 ------------*/
+.projects {
+    margin-top: 200px;
+}
+
+.projects__title {
+    margin-bottom: 65px;
+}
+
+.projects__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.projects__img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.projects--vertical .projects__img {
+    height: 560px;
+}
+
+/*------------
+    CONTACT
+------------*/
+.contact {
+    margin-top: 200px;
+    margin-bottom: 120px;
+}
+
+.contact .container {
+    max-width: 520px;
+    text-align: center;
+}
+
+.contact__title {
+    margin-bottom: 24px;
+}
+
+.contact__text {
+    margin-bottom: 50px;
+    font-size: 26px;
+}
+
+/*------------
+    FOOTER
+------------*/
+
+.footer {
+    padding: 40px 0;
+    border-top: 1px solid #696969;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer__copy {
+    font-size: 16px;
+}
+
+.footer__copy span {
+    color: #ECECEC;
+}
